@@ -33,9 +33,9 @@ Past RNA velocity methods have relied on the steady-state model, which assumes c
 scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
 
 ## References 
-https://scvelo.readthedocs.io/en/stable/
-https://www.nature.com/articles/s41587-020-0591-3  
-https://www.biorxiv.org/content/10.1101/820936v1.full
-https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ 
+https://scvelo.readthedocs.io/en/stable/ <br>
+https://www.nature.com/articles/s41587-020-0591-3 <br>
+https://www.biorxiv.org/content/10.1101/820936v1.full <br>
+https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ <br>
 (NEED ONE MORE)
 
