@@ -1,6 +1,6 @@
-# scVelo: RNA Velocity 
+# scVelo:Predicting the Future State of Cells
 
-## RNA Velocity: Predicting the Future State of Cells
+## RNA Velocity
 
 ## scVelo Workflow
 ![alt text](scVelo.jpg)
