@@ -28,4 +28,6 @@ scVelo identifies dynamical genes which are genes expression changes meaningfull
 Phase plots for individual genes show the relationship between spliced and unspliced mRNA, revealing when genes switch on or off. These transcriptional switches help identify regulators that may drive fate decisions. For example, genes like Actn4, Ppp3ca, Cpe, or Nnat show distinct kinetic patterns that correlate with major branch points in the trajectory.
 
 ## Advantages of scVelo's Dynamical Model
-Past RNA velocity  methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced  to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. 
+Past RNA velocity methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. However, in real biolgocial systems gene expression is almost never constant, so this assumption can lead to inaccurate or misleading velocity vector estimates. 
+
+scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This leads to several advantages, most notably:
