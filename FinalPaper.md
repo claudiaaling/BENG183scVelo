@@ -1,4 +1,4 @@
-# scVelo:Predicting the Future State of Cells
+# scVelo: Predicting the Future State of Cells
 
 ## RNA Velocity
 
