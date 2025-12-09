@@ -31,3 +31,11 @@ Phase plots for individual genes show the relationship between spliced and unspl
 Past RNA velocity methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. However, in real biolgocial systems gene expression is almost never constant, so this assumption can lead to inaccurate or misleading velocity vector estimates. 
 
 scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
+
+## References 
+https://scvelo.readthedocs.io/en/stable/
+https://www.nature.com/articles/s41587-020-0591-3  
+https://www.biorxiv.org/content/10.1101/820936v1.full
+https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ 
+(NEED ONE MORE)
+
