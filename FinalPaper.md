@@ -1,5 +1,5 @@
 # scVelo: Predicting the Future State of Cells
-### By: Audrey Torres, Claudia Ling, Caitlyn Marsh
+### By: Audrey Torres, Claudia Ling, Caitlin Marsh
 
 ## RNA Velocity
   In bioinformatics, there are several tools that can be used to measure gene activity in individual cells. Most commonly, traditional single cell RNA-seq is used to measure this, but alone can only reveal what the state of a cell is at a given time. Utilizing scVelo can expand on this perspective, offering more information about the dynamics of cell changes by utilizing a metric called RNA velocity. <br>
@@ -27,4 +27,5 @@ scVelo identifies dynamical genes which are genes expression changes meaningfull
 ### 4. Transcriptional Switches 
 Phase plots for individual genes show the relationship between spliced and unspliced mRNA, revealing when genes switch on or off. These transcriptional switches help identify regulators that may drive fate decisions. For example, genes like Actn4, Ppp3ca, Cpe, or Nnat show distinct kinetic patterns that correlate with major branch points in the trajectory.
 
-
+## Advantages of scVelo's Dynamical Model
+Past RNA velocity  methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced  to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. 
