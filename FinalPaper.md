@@ -1,5 +1,5 @@
 # scVelo: Predicting the Future State of Cells
-### By Audrey Torres, Claudia Ling, Caitlyn Marsh
+### By: Audrey Torres, Claudia Ling, Caitlyn Marsh
 
 ## RNA Velocity
   In bioinformatics, there are several tools that can be used to measure gene activity in individual cells. Most commonly, traditional single cell RNA-seq is used to measure this, but alone can only reveal what the state of a cell is at a given time. Utilizing scVelo can expand on this perspective, offering more information about the dynamics of cell changes by utilizing a metric called RNA velocity. 
