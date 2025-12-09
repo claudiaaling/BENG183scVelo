@@ -33,9 +33,11 @@ Past RNA velocity methods have relied on the steady-state model, which assumes c
 scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
 
 ## References 
-https://scvelo.readthedocs.io/en/stable/ <br>
-https://www.nature.com/articles/s41587-020-0591-3 <br>
-https://www.biorxiv.org/content/10.1101/820936v1.full <br>
-https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ <br>
-https://smorabit.github.io/blog/2021/velocyto/
+Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
+Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2020). Generalizing RNA velocity to transient cell states through dynamical modeling. Nature Biotechnology, 38(12), 1408–1414. https://doi.org/10.1038/s41587-020-0591-3. https://www.nature.com/articles/s41587-020-0591-3   <br>
+Morabito, Sam. “RNA Velocity Analysis with scVelo.” Sam Morabito Blog, 29 May 2021, https://smorabit.github.io/blog/2021/velocyto/ <br>
+Theis Lab. (2024). scVelo: RNA velocity generalized through dynamical modeling (Documentation). https://scvelo.readthedocs.io/en/stable/ <br>
+Su, L. (2021, May 12). Hematopoietic stem cells. Penn State College of Medicine – Stem Cell Club Blog. https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ 
+
+
 
