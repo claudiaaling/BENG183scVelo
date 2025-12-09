@@ -18,7 +18,7 @@ scVelo infers RNA velocity by leveraging both spliced and unspliced mRNA counts 
 Using scVelo, we can extract key insights about cellular dynamics, lineage progression, and gene regulation from single-cell RNA sequencing data.<br>
 ### 1. Dynamical Model <br>
 The dynamical model highlights both the identity of cell populations and the direction in which they progress. In the UMAP, RNA velocity streamlines reveal how cells transition from early  states toward differentiated endpoints such as ductal, endocrine, or hormone-producing lineages. Compared to the steady-state model, the dynamical model provides biologically consistent trajectories that align with known developmental pathways. <br>
-### 2. Latent Time: True Biological Progression  <br>
+### 2. Latent Time  <br>
 scVelo can compute latent time, an inferred continuous timeline that orders cells based on their transcriptional kinetics. Latent time acts as the cell’s internal developmental clock and reveals the true biological progression more accurately than traditional pseudotime. Distinct embryonic stages can be clearly separated, showing how populations evolve over developmental time.  <br>
  ### 3. Heatmap
 scVelo identifies dynamical genes which are genes expression changes meaningfully across the inferred developmental trajectory. The heatmap displays these genes in waves of activation and repression across latent time. This pattern confirms the direction of differentiation and highlights genes that likely regulate major transitions, such as early progenitor markers turning off and lineage-specific markers turning on.  <br>
