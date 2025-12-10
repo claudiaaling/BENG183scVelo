@@ -28,10 +28,10 @@ scVelo identifies dynamical genes which are genes expression changes meaningfull
 Phase plots for individual genes show the relationship between spliced and unspliced mRNA, revealing when genes switch on or off. These transcriptional switches help identify regulators that may drive fate decisions. For example, genes like Actn4, Ppp3ca, Cpe, or Nnat show distinct kinetic patterns that correlate with major branch points in the trajectory.
 
 ## Advantages of scVelo's Dynamical Model
-Past RNA velocity methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. However, in real biolgocial systems gene expression is almost never constant, so this assumption can lead to inaccurate or misleading velocity vector estimates. 
+Past RNA velocity methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. However, in real biological systems gene expression is almost never constant, so this assumption can lead to inaccurate or misleading velocity vector estimates. 
 
-scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
-- **Dynamical Model Over Steady State:** The dynimcal model creates a much more realistic picture of how gene expression is changing over time, especially in biological systems where genes are turning on and off rapidly. 
+scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expression rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
+- **Dynamical Model Over Steady State:** The dynamical model creates a much more realistic picture of how gene expression is changing over time, especially in biological systems where genes are turning on and off rapidly. 
 - **Reveals Developmental Timeline:** It can reveal a developmental timeline of gene expression using only one scRNA-seq dataset. This eliminates the need for long and expensive time-course experiments and enables the study of developmental processes that cannot be traced experimentally, like tumor evolution or inaccessible human tissues.
 - **Intuitive Visualizations:** The velocity vectors projected onto a UMAP make the developmental trajectories of cells easy to interpret. This makes downstream conclusions and biological interpretations more straightforward. 
 
@@ -39,10 +39,17 @@ scVelo’s dynamical model solves this problem! Instead of assuming equilibrium,
 Despite these benefits, scVelo still has limitations that should be considered when interpreting outputs.
 - **Depends on High-Quality Unspliced mRNA Counts:** This can be difficult to acquire because many scRNA-seq methods produce low coverage of unspliced reads, which can lead to inaccurate or noisy velocity vector fields. 
 - **Computationally Intensive:** Because the dynamical model iteratively estimates transcription, splicing, and degradation rates for thousands of genes, it's much more computationally demanding than the steady-state model. Large datasets may require significant memory and processing time to run.
-- **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small difference in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
+- **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small differences in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
 
 ## The Bergen Example
 ![alt text](figure2a.png)
+Figure 2a: Velocity streamlines for dentate gyrus neurogenesis. **Figure by Bergen et al., Nature Biotechnology 38(12), 2020.**
+### Recovering Known Developmental Trajectories
+The dentate gyrus is a well studied region of the hippocampus, and its neuronal lineage relationships have been mapped extensively through decades of wet lab lineage-tracing experiments. This makes it an ideal test case for validating scVelo's computational trajectory methods.
+
+In their study, Bergen et al. (2020) applied scVelo’s dynamical model to scRNA-seq data from the developing mouse dentate gyrus. Here, scVelo was able to recover the expected developmental progressions in addition to successfully identifying Cajal-Retzius (CR) cells as terminal. They also found that the velocity arrows generated by the dynamical model were substantially more coherent than those produced by the older steady-state model.
+### Why This Example Matters
+It is important to emphasize that this experiment did not produce new findings about dentate gyrus development, nor was that its purpose. Instead, it served as an example application and a biological validation of scVelo's methods. This opens the door to studying biological systems where the developmental timeline is unknown or cannot be followed experimentally, including tumor development and other tissues that cannot be sampled repeatedly over time. It also provides an alternative to long and expensive time-course experiments. 
 
 ## References 
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
