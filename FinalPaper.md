@@ -41,6 +41,9 @@ Despite these benefits, scVelo still has limitations that should be considered w
 - **Computationally Intensive:** Because the dynamical model iteratively estimates transcription, splicing, and degradation rates for thousands of genes, it's much more computationally demanding than the steady-state model. Large datasets may require significant memory and processing time to run.
 - **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small difference in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
 
+## The Bergen Example
+
+
 ## References 
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2020). Generalizing RNA velocity to transient cell states through dynamical modeling. Nature Biotechnology, 38(12), 1408–1414. https://doi.org/10.1038/s41587-020-0591-3. https://www.nature.com/articles/s41587-020-0591-3   <br>
