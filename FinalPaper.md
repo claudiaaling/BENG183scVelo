@@ -31,6 +31,9 @@ Phase plots for individual genes show the relationship between spliced and unspl
 Past RNA velocity methods have relied on the steady-state model, which assumes constant gene expression rates and, therefore, a stable ratio of unspliced to spliced mRNA transcripts. It looks for deviations from this assumed model to generate velocity vectors. However, in real biolgocial systems gene expression is almost never constant, so this assumption can lead to inaccurate or misleading velocity vector estimates. 
 
 scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
+- **Dynamical Model Over Steady State:** The dynimcal model creates a much more realistic picture of how gene expression is changing over time, especially in biological systems where genes are turning on and off rapidly. 
+- **Reveals Developmental Timeline:** Reveals developmental timeline of gene expression from using only one scRNA-seq dataset. This eliminates the need for long and expensive time-course experiments and enables the study of developmental processes that cannot be traced experimentally, like tumor evolution or inaccessible human tissues.
+- **It's Visualizations Are Intuitive!** The velocity vectors projected onto a UMAP make the developmental trajectories of cells easy to interpret. This makes downstream conclusions and biological interpretations more straightforward. 
 
 ## References 
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
