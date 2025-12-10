@@ -43,7 +43,7 @@ scVelo’s dynamical model solves this problem! Instead of assuming equilibrium,
 Despite these benefits, scVelo still has limitations that should be considered when interpreting outputs.
 - **Depends on High-Quality Unspliced mRNA Counts:** This can be difficult to acquire because many scRNA-seq methods produce low coverage of unspliced reads, which can lead to inaccurate or noisy velocity vector fields. 
 - **Computationally Intensive:** Because the dynamical model iteratively estimates transcription, splicing, and degradation rates for thousands of genes, it's much more computationally demanding than the steady-state model. Large datasets may require significant memory and processing time to run.
-- **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small differences in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
+- **Sensitive to Preprocessing Choices:** Velocity results can vary depending on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small differences in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
 
 ## The Bergen Example
 ![alt text](figure2a.png)
