@@ -32,15 +32,19 @@ Past RNA velocity methods have relied on the steady-state model, which assumes c
 
 scVelo’s dynamical model solves this problem! Instead of assuming equilibrium, it accounts for changing gene expresison rates over time by explicitly looking at transcription, splicing, and degradation. This offers several advantages, most notably:
 - **Dynamical Model Over Steady State:** The dynimcal model creates a much more realistic picture of how gene expression is changing over time, especially in biological systems where genes are turning on and off rapidly. 
-- **Reveals Developmental Timeline:** Reveals developmental timeline of gene expression from using only one scRNA-seq dataset. This eliminates the need for long and expensive time-course experiments and enables the study of developmental processes that cannot be traced experimentally, like tumor evolution or inaccessible human tissues.
+- **Reveals Developmental Timeline:** It can reveal a developmental timeline of gene expression using only one scRNA-seq dataset. This eliminates the need for long and expensive time-course experiments and enables the study of developmental processes that cannot be traced experimentally, like tumor evolution or inaccessible human tissues.
 - **Intuitive Visualizations:** The velocity vectors projected onto a UMAP make the developmental trajectories of cells easy to interpret. This makes downstream conclusions and biological interpretations more straightforward. 
+
+## Limitations of scVelo
+Despite these benefits, scVelo still has limitations that should be considered when interpreting outputs.
+- **Depends on High-Quality Unspliced mRNA Counts:** This can be difficult to acquire because many scRNA-seq methods produce low coverage of unspliced reads, which can lead to inaccurate or noisy velocity vector fields. 
+- **Computationally Intensive:** Because the dynamical model iteratively estimates transcription, splicing, and degradation rates for thousands of genes, it's much more computationally demanding than the steady-state model. Large datasets may require significant memory and processing time to run.
+- **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small difference in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
 
 ## References 
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2020). Generalizing RNA velocity to transient cell states through dynamical modeling. Nature Biotechnology, 38(12), 1408–1414. https://doi.org/10.1038/s41587-020-0591-3. https://www.nature.com/articles/s41587-020-0591-3   <br>
-Morabito, Sam. “RNA Velocity Analysis with scVelo.” Sam Morabito Blog, 29 May 2021, https://smorabit.github.io/blog/2021/velocyto/ <br>
+Soneson, C., & Robinson, M. D. (2021). Bias, robustness and scalability in single-cell RNA-seq analysis, with a focus on RNA velocity. Nature Methods, 18, 1137–1145. https://doi.org/10.1038/s41592-021-01102-w. https://www.nature.com/articles/s41592-021-01102-w <br>
 Theis Lab. (2024). scVelo: RNA velocity generalized through dynamical modeling (Documentation). https://scvelo.readthedocs.io/en/stable/ <br>
+Morabito, Sam. “RNA Velocity Analysis with scVelo.” Sam Morabito Blog, 29 May 2021, https://smorabit.github.io/blog/2021/velocyto/ <br>
 Su, L. (2021, May 12). Hematopoietic stem cells. Penn State College of Medicine – Stem Cell Club Blog. https://sites.psu.edu/stemcellhershey/2021/05/12/hsc/ 
-
-
-
