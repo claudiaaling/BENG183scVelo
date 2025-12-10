@@ -42,7 +42,7 @@ Despite these benefits, scVelo still has limitations that should be considered w
 - **Sensitive to Preprocessing Choices:** Velocity results can shift based on filtering thresholds, normalization strategy, and construction of the k-nearest neighbor graph. Even small difference in preprocessing can result in divergent velocity fields, making analyses harder to reproduce. This also requires users to pay close attention to their preprocessing steps and maintain thorough documentation. 
 
 ## The Bergen Example
-
+![alt text](figure2a.png)
 
 ## References 
 Bergen, V., Lange, M., Peidli, S., Wolf, F. A., & Theis, F. J. (2019). Generalizing RNA velocity to transient cell states through dynamical modeling. bioRxiv. https://doi.org/10.1101/820936. https://www.biorxiv.org/content/10.1101/820936v1.full <br>
