@@ -17,6 +17,10 @@ scVelo infers RNA velocity by leveraging both spliced and unspliced mRNA counts 
 
 ## scVelo Analysis
 ![alt text](BENG183_Analysis.webp)
+<div align="center">
+Figure 3: Example scVelo analysis outputs from pancreatic endocrinogenesis. <b>Figure by Bergen et al., Nature Biotechnology 38(12), 2020.</b> <br>
+</div> <br>
+
 Using scVelo, we can extract key insights about cellular dynamics, lineage progression, and gene regulation from single-cell RNA sequencing data.<br>
 ### 1. Dynamical Model <br>
 The dynamical model highlights both the identity of cell populations and the direction in which they progress. In the UMAP, RNA velocity streamlines reveal how cells transition from early  states toward differentiated endpoints such as ductal, endocrine, or hormone-producing lineages. Compared to the steady-state model, the dynamical model provides biologically consistent trajectories that align with known developmental pathways. <br>
@@ -43,7 +47,10 @@ Despite these benefits, scVelo still has limitations that should be considered w
 
 ## The Bergen Example
 ![alt text](figure2a.png)
-Figure 2a: Velocity streamlines for dentate gyrus neurogenesis. **Figure by Bergen et al., Nature Biotechnology 38(12), 2020.**
+<div align="center">
+Figure 2a: Velocity streamlines for dentate gyrus neurogenesis. <b>Figure by Bergen et al., Nature Biotechnology 38(12), 2020.</b> <br>
+</div>
+
 ### Recovering Known Developmental Trajectories
 The dentate gyrus is a well studied region of the hippocampus, and its neuronal lineage relationships have been mapped extensively through decades of wet lab lineage-tracing experiments. This makes it an ideal test case for validating scVelo's computational trajectory methods.
 
